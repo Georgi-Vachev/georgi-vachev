@@ -1,9 +1,9 @@
-import AboutSection from '@/components/AboutSection';
+import ResumeSection from '@/components/ResumeSection';
 
 export default function Home() {
   return (
     <main className="container mx-auto p-4">
-      <AboutSection />
+      <ResumeSection />
     </main>
   );
 }

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const AboutSection = () => {
+const ResumeSection = () => {
     const [showContact, setShowContact] = useState(false);
 
     return (
@@ -48,4 +48,4 @@ const AboutSection = () => {
     );
 };
 
-export default AboutSection;
+export default ResumeSection;
