@@ -1,9 +1,6 @@
-import ResumeSection from '@/components/ResumeSection';
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main className="container mx-auto p-4">
-      <ResumeSection />
-    </main>
-  );
+export default function HomePage() {
+  // Immediately redirect to /resume
+  redirect("/resume");
 }

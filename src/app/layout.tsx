@@ -20,17 +20,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="min-h-screen border border-gray-500 relative">
+    <html lang="en" className="h-screen">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}>
+        <div className="relative z-10 h-screen overflow-auto overscroll-contain">
           <NavBar />
-          <div className="pt-1">
+          <div className="pt-1 pb-8">
             {children}
           </div>
         </div>
