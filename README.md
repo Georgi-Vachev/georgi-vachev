@@ -1,3 +1,3 @@
 👋
 
-georgi-vachev.vercel.app
+[georgi-vachev.vercel.app](https://georgi-vachev.vercel.app)
