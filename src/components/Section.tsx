@@ -3,6 +3,15 @@
 import { useState, ReactNode } from "react"
 import Image from "next/image"
 
+interface VideoProps {
+    src: string
+    className?: string
+    width?: number
+    height?: number
+    poster?: string
+    controls?: boolean
+}
+
 interface SectionProps {
     heading?: string | ReactNode
     headingImage?: {
@@ -19,6 +28,7 @@ interface SectionProps {
         height?: number
         className?: string
     }
+    video?: VideoProps
     text?: ReactNode
     dropdownContent?: ReactNode
     initialDropdownOpen?: boolean
@@ -30,6 +40,7 @@ export default function Section({
     heading,
     headingImage,
     image,
+    video,
     text,
     dropdownContent,
     initialDropdownOpen = false,
@@ -65,7 +76,14 @@ export default function Section({
             )}
 
             <div className="flex flex-col items-center space-y-4">
-                {image && (
+                {video ? (
+                    <video
+                        src={video.src}
+                        poster={video.poster}
+                        className="w-full h-64 object-contain bg-black rounded-lg"
+                        controls={video.controls ?? true}
+                    />
+                ) : image ? (
                     <Image
                         src={image.src}
                         alt={image.alt || "Section image"}
@@ -73,7 +91,7 @@ export default function Section({
                         height={image.height || 128}
                         className={`rounded-lg ${image.className || ""}`}
                     />
-                )}
+                ) : null}
                 {text && (
                     <div className="flex-1 text-center">
                         {typeof text === "string" ? (
@@ -87,7 +105,8 @@ export default function Section({
                     <>
                         <button
                             onClick={() => setDropdownOpen(!isDropdownOpen)}
-                            className={`text-white py-2 px-4 block mx-auto transform transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : "rotate-0"}`}
+                            className={`text-white py-2 px-4 block mx-auto transform transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : "rotate-0"
+                                }`}
                         >
                             ▼
                         </button>

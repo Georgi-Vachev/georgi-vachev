@@ -83,8 +83,8 @@ const NavBar = () => {
                         </p>
                         <div className="flex justify-center">
                             <a
-                                href="/cv.pdf"
-                                download="GeorgiVachevCV.pdf"
+                                href="/CV.pdf"
+                                download="CV.pdf"
                                 className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mr-2 text-center"
                             >
                                 Download CV 😊
