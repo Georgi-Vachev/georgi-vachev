@@ -46,7 +46,23 @@ export default function Projects() {
                     />
                 </div>
                 <div className="mx-auto w-full max-w-lg md:col-span-full">
-
+                    <Section
+                        heading="Solitaire"
+                        video={{
+                            src: "/solitaire-demo.mp4",
+                            poster: "/solitaire-poster.jpg",
+                        }}
+                        text="TypeScript, PIXI, Gsap, WebSocket"
+                        dropdownContent={
+                            <p className="text-slate-400">
+                                <>
+                                    <p>
+                                        Classic Solitaire Game that includes a WebSocket server which could be utilized by multiple clients.
+                                    </p>
+                                </>
+                            </p>
+                        }
+                    />
                 </div>
             </div>
         </main >
