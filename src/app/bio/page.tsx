@@ -77,7 +77,7 @@ export default function Bio() {
                     <Section
                         heading="Education"
                         headingImage={{
-                            src: "/education-icon.jpg",
+                            src: "/academic-icon.jpg",
                             alt: "Education Icon",
                             width: 24,
                             height: 24,

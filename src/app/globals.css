@@ -4,21 +4,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  /* Ensure the body is at least the full viewport height */
   min-height: 100%;
 }
 
@@ -26,17 +18,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--foreground);
   background: var(--background);
-  /* No transform to avoid creating new stacking contexts */
   position: relative;
-  z-index: 0;  /* so the pseudo-element can appear on top */
+  z-index: 0; 
 }
 
-/* Hide scrollbar on WebKit-based browsers */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar on Firefox */
 * {
   scrollbar-width: none;
 }
