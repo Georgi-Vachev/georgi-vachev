@@ -11,7 +11,21 @@ export default function Projects() {
                             src: "/bitter-critters-demo.mp4",
                             poster: "/bitter-critters-poster.jpg",
                         }}
-                        text="TypeScript, PIXI, React, Python, MongoDB"
+                        text={
+                            <>
+                                February 2024
+                                <br />
+                                TypeScript, PIXI, React, Python, MongoDB
+                                <br />
+                                <a href="https://github.com/Georgi-Vachev/bitter-critters" target="_blank" className="text-blue-500">
+                                    GitHub
+                                </a>
+                                <br />
+                                <a href="https://bitter-critters.vercel.app" target="_blank" className="text-blue-500">
+                                    Vercel
+                                </a>
+                            </>
+                        }
                         dropdownContent={
                             <p className="text-slate-400">
                                 <>
@@ -32,7 +46,21 @@ export default function Projects() {
                             src: "/circle-wars-demo.mp4",
                             poster: "/circle-wars-poster.jpg",
                         }}
-                        text="TypeScript, PIXI, React"
+                        text={
+                            <>
+                                January 2025
+                                <br />
+                                TypeScript, PIXI, React
+                                <br />
+                                <a href="https://github.com/Georgi-Vachev/circle-wars" target="_blank" className="text-blue-500">
+                                    GitHub
+                                </a>
+                                <br />
+                                <a href="https://circle-wars.vercel.app" target="_blank" className="text-blue-500">
+                                    Vercel
+                                </a>
+                            </>
+                        }
                         dropdownContent={
                             <p className="text-slate-400">
                                 <>
@@ -45,19 +73,58 @@ export default function Projects() {
                         }
                     />
                 </div>
-                <div className="mx-auto w-full max-w-lg md:col-span-full">
+                <div className="mx-auto w-full max-w-lg">
                     <Section
                         heading="Solitaire"
                         video={{
                             src: "/solitaire-demo.mp4",
                             poster: "/solitaire-poster.jpg",
                         }}
-                        text="TypeScript, PIXI, Gsap, WebSocket"
+                        text={
+                            <>
+                                February 2023
+                                <br />
+                                TypeScript, PIXI, Gsap, WebSocket
+                                <br />
+                                <a href="https://github.com/Georgi-Vachev/solitaire-client" target="_blank" className="text-blue-500">
+                                    GitHub
+                                </a>
+                            </>
+                        }
                         dropdownContent={
                             <p className="text-slate-400">
                                 <>
                                     <p>
                                         Classic Solitaire Game that includes a WebSocket server which could be utilized by multiple clients.
+                                    </p>
+                                </>
+                            </p>
+                        }
+                    />
+                </div>
+                <div className="mx-auto w-full max-w-lg">
+                    <Section
+                        heading="Sideways Shooter"
+                        video={{
+                            src: "/sideways-shooter-demo.mp4",
+                            poster: "/sideways-shooter-poster.jpg",
+                        }}
+                        text={
+                            <>
+                                June 2020
+                                <br />
+                                Python, Pygame
+                                <br />
+                                <a href="https://github.com/Georgi-Vachev/sideways-shooter" target="_blank" className="text-blue-500">
+                                    GitHub
+                                </a>
+                            </>
+                        }
+                        dropdownContent={
+                            <p className="text-slate-400">
+                                <>
+                                    <p>
+                                        Simple 2D shooter game with a highscore system.
                                     </p>
                                 </>
                             </p>

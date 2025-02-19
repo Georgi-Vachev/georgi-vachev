@@ -45,7 +45,7 @@ export default function Bio() {
                     <Section
                         heading="Professional Experience"
                         headingImage={{
-                            src: "/academic-icon.jpg",
+                            src: "/professional-icon.jpg",
                             alt: "Experience Icon",
                             width: 24,
                             height: 24,
@@ -77,8 +77,8 @@ export default function Bio() {
                     <Section
                         heading="Education"
                         headingImage={{
-                            src: "/academic-icon.jpg",
-                            alt: "Academic Icon",
+                            src: "/education-icon.jpg",
+                            alt: "Education Icon",
                             width: 24,
                             height: 24,
                         }}
@@ -106,7 +106,7 @@ export default function Bio() {
                     <Section
                         heading="Hobbies & Future Goals"
                         headingImage={{
-                            src: "/academic-icon.jpg",
+                            src: "/hobbies-icon.jpg",
                             alt: "Hobbies Icon",
                             width: 24,
                             height: 24,
