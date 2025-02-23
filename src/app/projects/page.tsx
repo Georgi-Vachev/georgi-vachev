@@ -99,7 +99,7 @@ export default function Projects() {
                             <p className="text-slate-400">
                                 <>
                                     <p>
-                                        Classic Solitaire Game that includes a WebSocket server which could be utilized by multiple clients.
+                                        Users can Register and Login through Supabase Authentication, and an initial balance is given to them at signup. The app is still in development.
                                     </p>
                                 </>
                             </p>
