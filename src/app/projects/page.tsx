@@ -75,6 +75,39 @@ export default function Projects() {
                 </div>
                 <div className="mx-auto w-full max-w-lg">
                     <Section
+                        heading="Cashmate"
+                        video={{
+                            src: "/cashmate-demo.mp4",
+                            poster: "/cashmate-poster.jpg",
+                        }}
+                        text={
+                            <>
+                                February 2025
+                                <br />
+                                Next.js, Supabase, Tailwind, React, TypeScript
+                                <br />
+                                <a href="https://github.com/Georgi-Vachev/cashmate" target="_blank" className="text-blue-500">
+                                    GitHub
+                                </a>
+                                <br />
+                                <a href="https://cashmate-blush.vercel.app/" target="_blank" className="text-blue-500">
+                                    Vercel
+                                </a>
+                            </>
+                        }
+                        dropdownContent={
+                            <p className="text-slate-400">
+                                <>
+                                    <p>
+                                        Classic Solitaire Game that includes a WebSocket server which could be utilized by multiple clients.
+                                    </p>
+                                </>
+                            </p>
+                        }
+                    />
+                </div>
+                <div className="mx-auto w-full max-w-lg">
+                    <Section
                         heading="Solitaire"
                         video={{
                             src: "/solitaire-demo.mp4",
@@ -102,7 +135,7 @@ export default function Projects() {
                         }
                     />
                 </div>
-                <div className="mx-auto w-full max-w-lg">
+                <div className="mx-auto w-full max-w-lg md:col-span-full">
                     <Section
                         heading="Sideways Shooter"
                         video={{
